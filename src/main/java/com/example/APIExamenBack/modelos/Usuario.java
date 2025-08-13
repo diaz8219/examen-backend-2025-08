@@ -14,13 +14,13 @@ public class Usuario {
     @Column(name ="nombre", nullable = false, unique = true, length = 100)
     private String nombre;
 
-    @Column(name = "correo_electronico", nullable = false, unique = true)
+    @Column(name = "correo_electronico", nullable = false, unique = true, length = 50)
     private String correoElectronico;
 
-    @Column(name = "contraseña", nullable = false, unique = true)
+    @Column(name = "contraseña", nullable = false, unique = true, length = 16)
     private String contraseña;
 
-    @Column(name = "telefono", nullable = true, unique = true)
+    @Column(name = "telefono", nullable = true, unique = true, length = 10)
     private String telefono;
 
     @Enumerated(EnumType.STRING)

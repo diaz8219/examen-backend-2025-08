@@ -10,7 +10,7 @@ public class Docente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "especialidad", nullable = false, unique = true)
+    @Column(name = "especialidad", nullable = false, unique = true, length = 20)
     private  String especialidad;
 
     public Docente() {
